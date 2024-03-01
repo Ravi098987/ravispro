@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virekha Enterprises - Building Material Shop</title>
+    <style>
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #343a40;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #495057;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .product-item {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 200px;
+            text-align: center;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .product-item img {
+            width: 150px;
+            height: 150px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .product-item h3 {
+            margin: 0;
+        }
+        .product-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Virekha Enterprises - Building Material Shop</h1>
+        <p>Your one-stop destination for quality building materials</p>
+    </header>
+    <nav>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product">
+            <div class="product-item" onclick="showDetails('Cement', 'cement.jpg')">
+                <img src=" istockphoto-1448349078-612x612.jpg" alt="Cement">
+                <h3>cement</h3>
+            </div>
+            <div class="product-item" onclick="showDetails('Cement', 'cement.jpg')">
+                <img src="  images.jpeg" alt="Cement">
+                <h3>square pipes</h3>
+            </div>
+            <div class="product-item" onclick="showDetails('Cement', 'cement.jpg')">
+                <img src="  steel-rods.jpg "alt="Cement">
+                <h3>jindal rods</h3>
+            </div>
+            <div class="product-item" onclick="showDetails('Cement', 'cement.jpg')">
+                <img src="  0-50-mm-roofing-steel-sheet-250x250.webp" alt="Cement">
+                <h3>jsw sheets</h3>
+            </div>
+            <div class="product-item" onclick="showDetails('Cement', 'cement.jpg')">
+                <img src="  download (3).jpeg" alt="Cement">
+                <h3>chimneys</h3>
+            </div>
+            <div class="product-item" onclick="showDetails('Cement', 'cement.jpg')">
+                <img src="  1200x1200.png" alt="Cement">
+                <h3>kitchen sink</h3>
+            </div>
+            <div class="product-item" onclick="showDetails('Cement', 'cement.jpg')">
+                <img src=" 1200x1200 (1).png" alt="Cement">
+                <h3> design</h3>
+            </div>
+
+            <div class="product-item" onclick="showDetails('Cement', 'cement.jpg')">
+                <img src="  download (1).jpeg" alt="Cement">
+                <h3>paints </h3>
+            </div>
+            <div class="product-item" onclick="showDetails('Steel', 'steel.jpg')">
+                <img src="images (1).jpeg" alt="Steel">
+                <h3>Steel rods</h3>
+            </div>
+            <div class="product-item" onclick="showDetails('Bricks', 'bricks.jpg')">
+                <img src=" download.jpeg" alt="Bricks">
+                <h3>Bricks</h3>
+            </div>
+            <div class="product-item" onclick="showDetails('Wood', 'wood.jpg')">
+                <img src="istockphoto-168356310-612x612.jpg " alt="Wood">
+                <h3>hardware pipes</h3>
+            </div>
+            <div class="product-item" onclick="showDetails('Roofing Materials', 'roofing.jpg')">
+                <img src="360_F_423791055_Dj2nQzEtE4lMbh53JIlXoduAlAK44UP8.jpg " alt="Roofing Materials">
+                <h3>jsw roofinfg sheets</h3>
+            </div>
+            
+   
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Contact Number:</strong> Mr Vinod Kumar Singh
+        <p><strong>Contact Number:</strong> <a href="tel:6201348781">6201348781</a></p>
+        <p><strong>Address:</strong> Sasaram, Rohtas, Bihar</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Virekha Enterprises - Building Material Shop. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript code
+        function showDetails(productName, imagePath) {
+            alert("Product: " + productName); // You can replace this with any other action, like opening a modal
+        }
+    </script>
+</body>
+</html>
